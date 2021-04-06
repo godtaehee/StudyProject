@@ -481,12 +481,27 @@
             </div>
         </aside>
 
+        <div class="modal d-none">
+            <p>안녕하세요 모달창입니다.</p>
+        </div>
+
         <footer class="footer">
             <h1 class="d-none">footer</h1>
             <!-- <h1>footer</h1> -->
         </footer>
     </div>
     <script>
+        const write = document.querySelector('.write-section');
+        const modal = document.querySelector('.modal');
+        write.addEventListener('click', () =>{
+            if(modal.classList.contains('d-none')){
+                modal.classList.remove('d-none');
+                modal.classList.add('d-block');
+            }else {
+                modal.classList.remove('d-block');
+                modal.classList.add('d-none');
+            }
+        });
         window.addEventListener("load", () =>{
             const button = document.querySelector(".btn-show");
 
