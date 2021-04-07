@@ -18,6 +18,8 @@
     
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+
+    text-indent: 10px;
 }
 
 .btn{
@@ -58,38 +60,32 @@
 .signup-form-container{
     background-color: #ddeef3;
     margin-top: 24.8px;
-    height: 674px;
 
     display: flex;
 }
 .form-signup{
     width: 100%;
-    margin-top: 62.6px;
 
     position: relative;
 }
     .form-signup > *{
         margin-left: 21px;
     }
-    .form-signup > div:last-child{
-        margin-left: 0;
-    }
+
         .input-email{
             /* E-mail 형식 맞으면 check */
             background: #ffffff url("img/icon-check.png") no-repeat 90%; 
             /* background: #ffffff */
-            text-indent: 10px;
         }
-        .input-password{
+        .input-password-check{
             /* 로그인 실패 시 warning */
             background: #ffffff url("img/icon-warning.png") no-repeat 90%;
             /* background: #ffffff */
-            text-indent: 10px;
         }
 
         .btn-signup{
-            background: url("img/button-signup.png") no-repeat;
-            margin: 59.3px 0 39.2px;
+            background: url("img/button-signup.png") no-repeat center;
+            margin: 49px 0 39.2px 0;
             width: 485px;
 
             cursor: pointer;
@@ -101,7 +97,7 @@
         height: 75.4px;
         width: 284px;
 
-        top: 245px;
+        top: 555px;
         left: 525px;
         position: absolute;
     }

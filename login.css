@@ -18,6 +18,8 @@
     
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+
+    text-indent: 10px;
 }
 
 .btn{
@@ -78,17 +80,15 @@
             /* E-mail 형식 맞으면 check */
             background: #ffffff url("img/icon-check.png") no-repeat 90%; 
             /* background: #ffffff */
-            text-indent: 10px;
         }
         .input-password{
             /* 로그인 실패 시 warning */
             background: #ffffff url("img/icon-warning.png") no-repeat 90%;
             /* background: #ffffff */
-            text-indent: 10px;
         }
 
         .btn-login{
-            background: url("img/button-login.png") no-repeat;
+            background: url("img/button-login.png") no-repeat center;
             margin: 59.3px 0 39.2px;
             width: 485px;
 
