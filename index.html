@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="d-none">header</h1>
+            <h1 class="hide">header</h1>
             <!-- <a href=""></a> -->
 
             <div class="menu">
@@ -54,12 +54,12 @@
 
 
         <aside class="aside">
-            <h1 class="d-none">aside</h1>
+            <h1 class="hide">aside</h1>
         </aside>
 
 
         <section class="jumbotron">
-            <h1 class="d-none">jumbo</h1>
+            <h1 class="hide">jumbo</h1>
             <div class="jumbotron-text">
                 <div class="title-container">
                     <div class="jumbo-title">모각모각 JSP 스터디</div>
@@ -82,7 +82,7 @@
         </section>
 
         <main class="main">
-            <h1 class="d-none">main</h1>
+            <h1 class="hide">main</h1>
             <div class="main-menu">
                 <div class="main-button">
                     <div class="hot-icon"></div>
@@ -481,12 +481,12 @@
             </div>
         </aside>
 
-        <div class="modal d-none">
+        <div class="modal hide">
             <p>안녕하세요 모달창입니다.</p>
         </div>
 
         <footer class="footer">
-            <h1 class="d-none">footer</h1>
+            <h1 class="hide">footer</h1>
             <!-- <h1>footer</h1> -->
         </footer>
     </div>
@@ -494,12 +494,12 @@
         const write = document.querySelector('.write-section');
         const modal = document.querySelector('.modal');
         write.addEventListener('click', () =>{
-            if(modal.classList.contains('d-none')){
-                modal.classList.remove('d-none');
-                modal.classList.add('d-block');
+            if(modal.classList.contains('hide')){
+                modal.classList.remove('hide');
+                modal.classList.add('show');
             }else {
-                modal.classList.remove('d-block');
-                modal.classList.add('d-none');
+                modal.classList.remove('show');
+                modal.classList.add('hide');
             }
         });
         window.addEventListener("load", () =>{
