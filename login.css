@@ -1,0 +1,160 @@
+/* element */
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.input-control{
+    margin: 53.4px 0 14.5px 0;
+}
+.input-item{
+    width: 90%;
+    height: 66.9px;
+
+    border-radius: 10px;
+    border: none;
+    
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-indent: 10px;
+}
+
+.btn{
+    width: 100%;
+    height: 66.9px;
+
+    outline: none;
+    border: none;
+}
+.btn-img{
+    text-indent: -999px;
+    overflow-x: hidden;
+}
+/* element */
+
+/* style - login */
+.login-container{
+    height: 100%;
+
+    display: inline-block;
+    width: 526px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 21px;
+}
+.login-title{
+    background-color: #1a4d92;
+
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+
+    text-align: center;
+    height: 92.2px;
+    line-height: 92.2px;
+}
+.login-form-container{
+    background-color: #ddeef3;
+    margin-top: 24.8px;
+    height: 674px;
+
+    display: flex;
+}
+.form-login{
+    width: 100%;
+    margin-top: 62.6px;
+
+    position: relative;
+}
+    .form-login > *{
+        margin-left: 21px;
+    }
+    .form-login > div:last-child{
+        margin-left: 0;
+    }
+        .input-email{
+            /* E-mail 형식 맞으면 check */
+            background: #ffffff url("img/icon-check.png") no-repeat 90%; 
+            /* background: #ffffff */
+        }
+        .input-password{
+            /* 로그인 실패 시 warning */
+            background: #ffffff url("img/icon-warning.png") no-repeat 90%;
+            /* background: #ffffff */
+        }
+
+        .btn-login{
+            background: url("img/button-login.png") no-repeat center;
+            margin: 59.3px 0 39.2px;
+            width: 485px;
+
+            cursor: pointer;
+        }
+        
+        .login-help{
+            font-size: 19px;
+            position: relative;
+        }
+            .login-help > .between-border{
+                display: inline-block;
+                object-fit: contain;
+                position: absolute;
+                top: -5px;
+            }
+            
+            .login-help > .find-password{
+                margin: 39.2px 20px 125.1px 109.2px;
+                font-weight: bold;
+            }
+            .login-help > .signup{
+                margin: 39.2px 109.2px 125.1px 23px;
+                font-weight: bold;
+            }
+            .login-help > .find-password:hover,
+            .login-help > .signup:hover{
+                text-decoration: underline;
+            }
+    .login-error{
+        background: url("img/login-error.png") no-repeat;
+
+        height: 75.4px;
+        width: 284px;
+
+        top: 245px;
+        left: 525px;
+        position: absolute;
+    }
+/* style - login */
+
+/* layout */
+.container-only{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 72px 1fr 50px;
+
+    height: 100%;
+}
+.container-only > *{
+    grid-column: 1 / span 12;
+}
+
+.main-only{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d2e9f5;
+
+    position: relative;
+}
+/* layout */
+
+/* media Query (PC ver.)*/
+@media screen and (min-width: 800px){
+    .container-only{
+        grid-template-rows: 100px 1fr 100px;
+    }
+}
+/* media Query (PC ver.) */
