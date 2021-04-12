@@ -35,8 +35,8 @@
 }
 /* element */
 
-/* style - login */
-.login-container{
+/* style - signup */
+.signup-container{
     height: 100%;
 
     display: inline-block;
@@ -46,7 +46,7 @@
 
     font-size: 21px;
 }
-.login-title{
+.signup-title{
     background-color: #1a4d92;
 
     color: #ffffff;
@@ -57,78 +57,51 @@
     height: 92.2px;
     line-height: 92.2px;
 }
-.login-form-container{
+.signup-form-container{
     background-color: #ddeef3;
     margin-top: 24.8px;
-    height: 674px;
 
     display: flex;
 }
-.form-login{
+.form-signup{
     width: 100%;
-    margin-top: 62.6px;
 
     position: relative;
 }
-    .form-login > *{
+    .form-signup > *{
         margin-left: 21px;
     }
-    .form-login > div:last-child{
-        margin-left: 0;
-    }
+
         .input-email{
             /* E-mail 형식 맞으면 check */
-            background: #ffffff url("img/icon-check.png") no-repeat 90%; 
+            background: #ffffff url("../img/icon-check.png") no-repeat 90%;
             /* background: #ffffff */
         }
-        .input-password{
+        .input-password-check{
             /* 로그인 실패 시 warning */
-            background: #ffffff url("img/icon-warning.png") no-repeat 90%;
+            background: #ffffff url("../img/icon-warning.png") no-repeat 90%;
             /* background: #ffffff */
         }
 
-        .btn-login{
-            background: url("img/button-login.png") no-repeat center;
-            margin: 59.3px 0 39.2px;
+        .btn-signup{
+            background: url("../img/button-signup.png") no-repeat center;
+            margin: 49px 0 39.2px 0;
             width: 485px;
 
             cursor: pointer;
         }
         
-        .login-help{
-            font-size: 19px;
-            position: relative;
-        }
-            .login-help > .between-border{
-                display: inline-block;
-                object-fit: contain;
-                position: absolute;
-                top: -5px;
-            }
-            
-            .login-help > .find-password{
-                margin: 39.2px 20px 125.1px 109.2px;
-                font-weight: bold;
-            }
-            .login-help > .signup{
-                margin: 39.2px 109.2px 125.1px 23px;
-                font-weight: bold;
-            }
-            .login-help > .find-password:hover,
-            .login-help > .signup:hover{
-                text-decoration: underline;
-            }
-    .login-error{
-        background: url("img/login-error.png") no-repeat;
+    .signup-error{
+        background: url("../img/login-error.png") no-repeat;
 
         height: 75.4px;
         width: 284px;
 
-        top: 245px;
+        top: 555px;
         left: 525px;
         position: absolute;
     }
-/* style - login */
+/* style - signup */
 
 /* layout */
 .container-only{
