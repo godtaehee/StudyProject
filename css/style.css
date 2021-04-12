@@ -10,7 +10,7 @@
 
 html,body {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .d-none {
@@ -49,14 +49,14 @@ html,body {
 .icon {
     width: 100px;
     height: 64px;
-    background-image: url("../img/logo.svg");
+    background-image: url("../img/detail/logo.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .drop-menu {
-    background-image: url("../img/person.png");
+    background-image: url("../img/detail/person.png");
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
@@ -91,7 +91,7 @@ html,body {
 
 .jumbotron{
     width: 100%;
-    background-image: url("../img/jumbotron.png");
+    background-image: url("../img/detail/jumbotron.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,7 +141,7 @@ html,body {
 .jumbo-icon {
     width: 20px;
     height:20px;
-    background-image: url("../img/calender.png");
+    background-image: url("../img/detail/calender.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,14 +158,14 @@ html,body {
 .invite-icon {
     width: 15px;
     height: 15px;
-    background: url("../img/ic-group-add-24-px.png") center center no-repeat;
+    background: url("../img/detail/ic-group-add-24-px.png") center center no-repeat;
     background-size: contain;
 }
 
 .setting-icon {
     width: 15px;
     height: 15px;
-    background: url("../img/ic-brightness-high-24-px.png") center center no-repeat;
+    background: url("../img/detail/ic-brightness-high-24-px.png") center center no-repeat;
     background-size: contain;
 }
 
@@ -212,14 +212,14 @@ html,body {
 .hot-icon {
     width: 100px;
     height: 41px;
-    background: url("../img/Hot.png") center center no-repeat;
+    background: url("../img/detail/Hot.png") center center no-repeat;
     background-size: contain;
 }
 
 .new-icon {
     width: 100px;
     height: 41px;
-    background: url("../img/New.png") center center no-repeat;
+    background: url("../img/detail/New.png") center center no-repeat;
     background-size: contain;
 }
 
@@ -234,7 +234,7 @@ html,body {
 .pencil {
     width: 50px;
     height: 41px;
-    background: url("../img/pencil.jpeg") center center no-repeat;
+    background: url("../img/detail/pencil.jpeg") center center no-repeat;
     background-size: contain;
 }
 
@@ -253,7 +253,7 @@ html,body {
 }
 
 .up {
-    background: url("../img/ic-file-download-24-px.png") no-repeat center center;
+    background: url("../img/detail/ic-file-download-24-px.png") no-repeat center center;
     background-size: contain;
     width: 15px;
     height: 15px;
@@ -263,7 +263,7 @@ html,body {
 }
 
 .down {
-    background: url("../img/ic-file-download-24-px.png") no-repeat center center;
+    background: url("../img/detail/ic-file-download-24-px.png") no-repeat center center;
     background-size: contain;
     width: 15px;
     height: 15px;
@@ -311,7 +311,7 @@ html,body {
 }
 
 .profile-picture {
-    background: url("../img/person.png") no-repeat center center;
+    background: url("../img/detail/person.png") no-repeat center center;
     background-size: contain;
     width: 20px;
     height: 20px;
@@ -340,7 +340,7 @@ html,body {
 }
 
 .comment-img {
-    background: url("../img/ic-mode-comment-24-px.png") no-repeat center center;
+    background: url("../img/detail/ic-mode-comment-24-px.png") no-repeat center center;
     background-size: contain;
     margin-right: 5px;
     width: 15px;
@@ -350,7 +350,7 @@ html,body {
     display: flex;
 }
 .save-img {
-    background: url("../img/ic-add-box-24-px.png") no-repeat center center;
+    background: url("../img/detail/ic-add-box-24-px.png") no-repeat center center;
     background-size: contain;
     margin-right: 5px;
     width: 15px;
@@ -426,7 +426,7 @@ html,body {
 }
 
 .calender-img {
-    background: url("../img/ic_today_24px.png") no-repeat center center;
+    background: url("../img/detail/ic_today_24px.png") no-repeat center center;
     background-size: contain;
     vertical-align: center;
     padding-left: 17px;
@@ -449,7 +449,7 @@ html,body {
 }
 
 .master-img {
-    background: url("../img/ic_local_florist_24px.png") center center no-repeat;
+    background: url("../img/detail/ic_local_florist_24px.png") center center no-repeat;
     background-size: contain;
     margin-right: 5px;
     width: 17px;
