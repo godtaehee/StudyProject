@@ -36,13 +36,6 @@ body {
     background: white;
 }
 
-.my-page {
-    background: #3ca0bf ;
-}
-.my-page a {
-    color: white;
-}
-
 .menu {
     display: flex;
     width: 100%;
@@ -102,11 +95,10 @@ body {
 
 .jumbotron{
     width: 100%;
-    background-image: url("../img/detail/jumbotron.png");
-    background-position: center center;
+    height: 339px;
+    background-image: url("../img/detail/521.png");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .title-container {
@@ -492,104 +484,3 @@ body {
     bottom: 0;
     margin: auto;
 }
-
-
-@media screen and (min-width: 800px){
-
-    .container {
-        display: grid;
-        height: 100%;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 100px 307px auto 100px;
-    }
-
-
-    .header {
-        grid-column: 1 / span 12;
-        grid-row: 1 / 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .menu {
-        padding: 0 5%;
-    }
-
-    .jumbotron {
-        grid-column: 1 / span 12;
-        grid-row: 2 / span 1;
-    }
-
-
-    .icon {
-        width: 130px;
-    }
-
-    .title-container {
-        padding-left: 7%;
-    }
-
-    .jumbo-menu {
-        margin-right: 5%;
-    }
-    .aside{
-
-        grid-column: 10 / span 2;
-        grid-row: 3 / span 9;
-        display: block;
-        padding: 5%;
-        margin-top: 7%;
-    }
-
-    .main{
-
-        grid-column: 2 / span 8;
-        grid-row: 3 / span ;
-    }
-
-    .user-menu {
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .user-btn {
-        width: 50px;
-        height: 50px;
-    }
-
-    .top-rate {
-        margin-top: 5%;
-    }
-    .top-content {
-        background: #d2e9f5;
-        margin-top: 5%;
-        padding: 5%;
-    }
-    .about-study {
-        display: block;
-        position: static;
-    }
-
-    .aside-active-btn {
-        display: none;
-    }
-
-    .top-rate-header {
-        height: 70px;
-        background: #d2e9f5;
-    }
-    .about-study {
-        width: 100%;
-    }
-
-    .footer{
-        height: 100px;
-        background: black;
-    }
-
-    .top-content .card {
-        background: white;
-    }
-}
-
