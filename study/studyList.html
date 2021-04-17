@@ -4,41 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/studyList2.css" type="text/css" rel="style.css">
     <link rel="stylesheet" href="../css/reset.css" type="text/css" rel="style.css">
     <link rel="stylesheet" href="../css/basic.css" type="text/css" rel="style.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/studyList2.css" type="text/css" rel="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Document</title>
+
+    <style>
+        .member-btn {
+            background: url("../img/detail/person.png") no-repeat center center;
+            background-size: cover;
+            width: 34px;
+            height: 34px;
+            position: relative;
+        }
+        .drop-list {
+            display: none;
+            position: absolute;
+        }
+
+    </style>
 </head>
 <body>
 <div class="body__container">
 
     <!-- HEADER -->
-    <header class="section">
-       <div class="inner clearfix">
-            <div class="menu-group float--left">
-                <div class="logo">
-                    <a href="">Stardy</a>
-                </div>
-                <ul class="main-menu">
-                    <li></li>
-                    <li></li>
-                </ul>
+    <header class="header">
+        <h1 class="hide">header</h1>
+        <!-- <a href=""></a> -->
+
+        <div class="menu">
+            <div class="logo flex">
+                <div class="icon"></div>
             </div>
 
-            <div class="sign-group float--right">
-                <div class="btn-group">
-                    <a href="#" class="btn sign-in">로그인</a>
-                    <a href="#" class="btn btn--primary">회원가입</a>
-                </div>
+            <div class="user-menu">
                 <form id="search-form" method="POST" action="">
                     <input type="text" id="search" class="input--text" placeholder="Search">
                     <input type="submit" value="Submit">
                 </form>
+                <div class="btn show-study user-item">
+                    <a href="#">스터디 보기</a>
+                </div>
+                <div class="btn my-page user-item">
+                    <a href="#">마이페이지</a>
+                </div>
+                <div class="drop-menu flex">
+                    <div class="drop-list">
+                        <div class="drop-item">
+                            <a href="#">로그아웃</a>
+                        </div>
+                        <div class="drop-item">
+                            <a href="#">설정</a>
+                        </div>
+                        <div class="drop-item">
+                            <a href="#">도움말</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-       </div>
-    </header>
 
+
+        </div>
+
+
+    </header>
     <!-- 스터디 목록검색  -->
     <div class="section section--visual">
         <div class="inner">
@@ -262,9 +294,5 @@
 
 
 </div>
-
-
-
-    
 </body>
 </html>

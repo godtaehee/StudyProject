@@ -16,7 +16,6 @@
             }
         });
 
-
         styleList.addEventListener('click', (e) => {
             const dataVal = e.target.parentNode.dataset.value;
             const element = document.createElement(dataVal);
