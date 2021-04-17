@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/basic.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main-only/layout.css">
+    <link rel="stylesheet" href="../css/main-only/element.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <!-- Javascript -->
+    <script src="../js/login.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container-only">
+    <div class="container-only body__container">
         <header class="header">
             <h1 class="hide">header</h1>
             <!-- <a href=""></a> -->
@@ -31,7 +37,7 @@
                         <a href="#">시험일정</a>
                     </div>
                     <div class="my-page user-item">
-                        <a href="#">마이페이지</a>
+                        <a href="mypage/friend">마이페이지</a>
                     </div>
                 </div>
 
@@ -44,7 +50,7 @@
                             <a href="#">시험일정</a>
                         </div>
                         <div class="my-page drop-item">
-                            <a href="#">마이페이지</a>
+                            <a href="mypage/friend">마이페이지</a>
                         </div>
                     </div>
                 </div>
@@ -57,21 +63,21 @@
 
                 <div class="login-form-container">
                     <h1 class="hide">로그인 폼</h1>
-                    <form action="" method="get" class="form form-login">
+                    <form action="/login" method="post" class="form form-login">
                         <div class="input-control">이메일을 입력해주세요.</div>
-                        <input class="input-item input-email" type="email" placeholder="error@mail.com">
+                        <input class="input-item input--text" name="email" type="email" placeholder="error@mail.com">
 
                         <div class="input-control">비밀번호를 입력해주세요.</div>
-                        <input class="input-item input-password" type="password" placeholder="******">
-                        <div class="login-error"></div>
+                        <input class="input-item input--text" name="password" type="password" placeholder="******">
+                        <div class="login-error hide"></div>
                         <div>
-                            <button class="btn btn-login"></button>
+                            <button class="btn button button-login"></button>
                         </div>
 
                         <div class="login-help">
                             <a href="#" class="find-password">비밀번호 찾기</a>
                             <img class="between-border" src="../img/between-border.png">
-                            <a href="#" class="signup">회원가입하기</a>
+                            <a href="signup" class="signup">회원가입하기</a>
                         </div>
                     </form>
 
@@ -85,5 +91,39 @@
             
         </footer>
     </div>
+    
+<!-- <script>
+	window.onload = (function(){
+		
+		var msg = '<%=request.getParameter("msg")%>';
+		//var msg = "${msg}";
+		console.log(msg);
+		
+		if(msg === 'error'){
+			document.querySelector(".login-error").className = 'login-error show';
+			document.querySelector("input[name='password']").className = 'input-item input-password input--text';
+		}
+		
+        const btnLogin = document.querySelector(".button-login");
+        const email = document.querySelector("input[name='email']");
+        const actionForm = document.querySelector("form");
+        
+        email.addEventListener("change", (e) => {
+        	
+        	if(isEmail(email.value))
+        		email.className = 'input-item input--text input-email';
+        	else
+        		email.className = 'input-item input--text';
+        });
+		
+        function isEmail(asValue) {
+
+        	var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+
+        	return regExp.test(asValue); // 형식에 맞는 경우 true 리턴	
+
+        }
+	});
+</script> -->
 </body>
 </html>

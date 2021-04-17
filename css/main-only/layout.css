@@ -1,0 +1,54 @@
+/* layout */
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    background: white;
+}
+.container-only{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.container-only > *{
+
+}
+
+.main-only{
+    display: block;
+    --border: 1px solid #d2e9f5;
+
+    position: relative;
+
+    overflow: visible;
+}
+.footer {
+    background-color: black;
+    min-height: 50px;
+}
+/* layout */
+
+@media screen and (min-width: 800px){
+    /* layout */
+    .container-only{
+
+    }
+    .main-only{
+        flex-grow: 1;
+
+        margin:0 auto 0 auto;
+        width: 1180px;
+
+        display: flex;
+    }
+    .footer{
+        min-height: 100px;
+    }
+    /* layout */
+}
