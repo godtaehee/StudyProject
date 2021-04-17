@@ -42,6 +42,17 @@ body {
 .my-page a {
     color: white;
 }
+.member-btn {
+    background: url("../img/detail/person.png") no-repeat center center;
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+    position: relative;
+}
+.drop-list {
+    display: none;
+    position: absolute;
+}
 
 .menu {
     display: flex;
