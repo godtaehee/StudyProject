@@ -18,11 +18,11 @@ body {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .show {
-    display: block;
+    display: block !important;
 }
 
 /* Header */
@@ -34,14 +34,39 @@ body {
 
 .header {
     background: white;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+#search-form {
+    display: none;
 }
 
 .my-page {
     background: #3ca0bf ;
+    margin-left: 10px;
 }
 .my-page a {
     color: white;
 }
+.on-box {
+    display: flex;
+    align-items: center;
+}
+
+.out-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+/*.user-menu {*/
+/*    flex-grow: 1;*/
+/*    justify-content: flex-end;*/
+/*}*/
 
 .menu {
     display: flex;
@@ -66,6 +91,14 @@ body {
     background-size: contain;
 }
 
+.user-menu .user-item {
+    display: none;
+}
+
+.out-box {
+    height: 100%;
+}
+
 .drop-menu {
     background-image: url("../img/detail/person.png");
     background-position: center center;
@@ -73,11 +106,10 @@ body {
     position: relative;
     width: 72px;
     height: 72px;
+    margin-left: auto;
 }
 
-.user-menu {
-    display: none;
-}
+
 
 .drop-menu:hover .drop-list{
     display: block;
@@ -496,6 +528,35 @@ body {
 
 @media screen and (min-width: 800px){
 
+    /* Header */
+
+    .my-page {
+        background: #3ca0bf ;
+        margin-left: 10px;
+    }
+    .my-page a {
+        color: white;
+    }
+    .on-box {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .out-box {
+        margin-left: 10px;
+    }
+
+    .user-menu .user-item {
+        display: block;
+    }
+
+
+    #search-form {
+        display: block;
+    }
+
+
     .container {
         display: grid;
         height: 100%;
@@ -510,9 +571,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .menu {
-        padding: 0 5%;
     }
 
     .jumbotron {
@@ -547,11 +605,14 @@ body {
         grid-row: 3 / span ;
     }
 
+    .user-item a {
+        line-height: 34px;
+    }
+
     .user-menu {
-        width: 25%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-end;
     }
     .user-btn {
         width: 50px;
