@@ -19,13 +19,6 @@
 .d-none {
   display: none;
 }
-<<<<<<< HEAD
-/* 태희님거 */
-
-/*바디 전체 영역의 글꼴*/
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap");
-=======
->>>>>>> 7e8605788e4e8a3feb499dcf37ca35e9ce19cc46
 
 /*--------------SECTION & INNER-------------------*/
 
@@ -57,7 +50,6 @@
     0 0 5px rgba(81, 167, 232, 0.5);
 }
 
-<<<<<<< HEAD
 
 #search-form {
   margin-right: 17px;
@@ -73,8 +65,6 @@
 
 
 
-=======
->>>>>>> 7e8605788e4e8a3feb499dcf37ca35e9ce19cc46
 /* --버튼---------------------------------- */
 .btn {
   height: 34px;
@@ -118,7 +108,3 @@
   color: #fff;
   background: #ffd46a linear-gradient(#fcd675, #dbb554);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 7e8605788e4e8a3feb499dcf37ca35e9ce19cc46

@@ -94,11 +94,14 @@
                 .friend-list{
                     background: url("../../img/icon-smile.png") no-repeat left;
                 }
-                .my-study{
+                /* .my-study{
                     background: url("../../img/icon-myStudy.png") no-repeat left;
-                }
+                } */
                 .my-bookmark{
                     background: url("../../img/icon-star.png") no-repeat left;
+                }
+                .my-modify{
+                    background: url("../../img/icon-modify.png") no-repeat left;
                 }
     /* Content-menu */
 

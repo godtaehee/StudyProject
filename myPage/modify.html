@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../css/main-only/layout.css">
     <link rel="stylesheet" href="../css/main-only/element.css">
     <link rel="stylesheet" href="../css/mypage/common.css">
-    <link rel="stylesheet" href="../css/mypage/myStudy.css">
+    <link rel="stylesheet" href="../css/mypage/modify.css">
 
     <!-- Javascript -->
     <script src="../js/mypage/mypage.js"></script>
-    <script src="../js/mypage/myStudy.js"></script>
+    <script src="../js/mypage/modify.js"></script>
     <title>Document</title>
 </head>
 
@@ -114,56 +114,31 @@
                         </ul>
                     </nav>
 
-                    <div class="my-studies-box">
-                        <div class="my-studies">
+                    <section class="modify-box">
+                        <h1 class="hide">회원 정보 수정 폼</h1>
+                        
+                        <div class="modify-form-box">
+                            <form action="#" class="modify-form" method="post">
+                                <div class="input-control">내 닉네임</div>
+                                <input class="input-item input-nick input--text" type="text" value="test" name="nick">
 
-                            <div class="study-box">
-                                <div class="study-bg-box">
-                                    <img class="study-bg" src="../img/detail/jumbotron.png">
-                                </div>
-                                <div class="study-name text-no-over">
-                                    날씨 앱 개발 프로젝트 모집합니다
-                                </div>
-                            </div>
+                                <div class="input-control">내 이메일</div>
+                                <input class="input-item input--text" type="email" value="test@naver.com" name="email" readonly>
 
-                            <div class="study-box">
-                                <div class="study-bg-box">
-                                    <img class="study-bg" src="../img/detail/jumbotron.png">
-                                </div>
-                                <div class="study-name text-no-over">
-                                    날씨 앱 개발 프로젝트 모집합니다
-                                </div>
-                            </div>
+                                <div class="input-control">비밀번호 변경</div>
+                                <input class="input-item input-password input--text" type="password" placeholder="******" name="password">
 
-                            <div class="study-box">
-                                <div class="study-bg-box">
-                                    <img class="study-bg" src="../img/detail/jumbotron.png">
-                                </div>
-                                <div class="study-name text-no-over">
-                                    날씨 앱 개발 프로젝트 모집합니다
-                                </div>
-                            </div>
+                                <div class="input-control">비밀번호 확인</div>
+                                <input class="input-item input--text" type="password" placeholder="******" name="check">
 
-                            <div class="study-box">
-                                <div class="study-bg-box">
-                                    <img class="study-bg" src="../img/detail/jumbotron.png">
+                                <div class="signup-error hide"></div>
+                                <div class="button-box">
+                                    <button class="btn button button-modify">개인정보 수정</button>
+                                    <button class="btn button button-drop-out">회원 탈퇴</button>
                                 </div>
-                                <div class="study-name text-no-over">
-                                    날씨 앱 개발 프로젝트 모집합니다
-                                </div>
-                            </div>
-
-                            <div class="study-box">
-                                <div class="study-bg-box">
-                                    <img class="study-bg" src="../img/detail/jumbotron.png">
-                                </div>
-                                <div class="study-name text-no-over">
-                                    날씨 앱 개발 프로젝트 모집합니다
-                                </div>
-                            </div>
-
+                            </form>
                         </div>
-                    </div>
+                    </section>
                 </div>
 
             </section>
@@ -174,5 +149,6 @@
             
         </footer>
     </div>
+
 </body>
 </html>

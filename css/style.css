@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@rhacnddl 
-wonderfulhuman
-/
-StudyProject
-1
-03
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-StudyProject/css/style.css
-@wonderfulhuman
-wonderfulhuman complete header real
-Latest commit 9a9ca29 5 minutes ago
- History
- 2 contributors
-@wonderfulhuman@rhacnddl
-656 lines (547 sloc)  10.4 KB
-  
 .flex {
     display: flex;
     justify-content: center;
@@ -94,10 +63,17 @@ body {
     margin-right: 10px;
 }
 
-/*.user-menu {*/
-/*    flex-grow: 1;*/
-/*    justify-content: flex-end;*/
-/*}*/
+.member-btn {
+    background: url("../img/detail/person.png") no-repeat center center;
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+    position: relative;
+}
+.drop-list {
+    display: none;
+    position: absolute;
+}
 
 .menu {
     display: flex;
