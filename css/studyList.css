@@ -22,7 +22,7 @@
   box-sizing: border-box;
   position: relative;
 }
-
+/* 
 .btn:hover::before {
   content: "";
   position: absolute;
@@ -31,7 +31,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.07);
-}
+} */
 
 .btn.btn--primary {
   border: 0.5px solid rgba(112, 112, 112, 0.35);
@@ -48,6 +48,14 @@
   color: #fff;
   background: #ffd46a linear-gradient(#fcd675, #dbb554);
 }
+
+.button {
+  display: inline-block;
+  text-indent: -999px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 /*---------------------입력양식----------------------*/
 .input--text {
   height: 34px;
@@ -145,7 +153,10 @@ header .btn-group .sign-in {
 }
 
 #search-form {
-  margin-right: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --margin-right: 17px;
 }
 #search {
   width: 203px;
@@ -178,16 +189,20 @@ header .btn-group .sign-in {
 
 .section--category {
   background: #eeeeee;
-  padding-top: 36px;
   max-width: 1180px;
   margin: 0 auto;
   height: 176px;
   margin-bottom: 30px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .section--category .list_search {
-  max-width: 700px;
+  display: flex;
   margin: 0 auto;
+  flex-direction: column;
 }
 .list_search .search-form {
   max-width: 500px;
@@ -199,8 +214,10 @@ header .btn-group .sign-in {
 }
 
 .list_search .search-menu {
-  max-width: 700px;
-  margin-left: 32px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 
 /*-MAIN--------------------------------*/
@@ -267,4 +284,71 @@ header .btn-group .sign-in {
 
 .text_date .date p:nth-child(2) {
   margin-right: 20px;
+}
+
+.pager > div:nth-child(2) {
+  height: 35px;
+  width: 75px;
+  background: url("../img/btnPrev.png") no-repeat center;
+  margin-right: 4px;
+}
+
+.pager > div:nth-child(4) {
+  height: 35px;
+  width: 75px;
+  background: url("../img/btnNext.png") no-repeat center;
+}
+
+.pager > ul {
+  display: flex;
+  height: 35px;
+}
+
+.pager > ul li {
+  border: solid 1px #494949;
+  display: flex;
+  width: 37px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.pager {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 35px;
+}
+
+.pager > ul > li a {
+  font-weight: bold;
+  color: #2ba5ca;
+  padding: 50%;
+}
+
+/* --------media Query (PC ver.)-----------*/
+@media screen and (max-width: 1024px) {
+  header.section .inner {
+    max-width: none;
+    margin: 0 auto;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  section .section--visual {
+    max-width: none;
+    margin: 0 auto;
+    height: auto;
+  }
+  .visual_title {
+    margin-left: 20px;
+  }
+
+  section .section--category {
+    max-width: none;
+    margin: 0 auto;
+    height: 130px;
+  }
 }
