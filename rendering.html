@@ -6,26 +6,43 @@
     <link rel="stylesheet" href="css/reset.css">
     <style>
 
-        .test {
-            color: white;
-            position: fixed;
-            left: 0px; right: 0px; top: 0px; bottom: 0px;
+        .go-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
         }
     </style>
 </head>
 <body style="position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; overflow: hidden; margin: 0; padding: 0; height: 100%">
+    <video class="video" src="video/solar.mov" style="position: absolute; width: 100px; height: 100px; " autoplay muted loop></video>
     <canvas id="canvas" style="width: 100%; height: 100%; padding: 0;margin: 0;"></canvas>
-
+    <button type="button" class="go-btn">
+        <a href="index.html">이동하기</a>
+    </button>
 
     <script>
 
+
+
+
+
         const canvas = document.querySelector('#canvas');
         const c = canvas.getContext("2d");
-        const img = new Image();
+
+        let img = new Image();
         img.src = "img/detail/transparent-logo.png";
-        // img.src = "img/detail/2349BA4553BC309D0A.gif";
 
+        c.textAlign = 'center';
+        c.fillText('비디오 로딩 중..', 300, 200);
 
+        const videoElem = document.querySelector('.video');
+
+        videoElem.addEventListener('canplaythrough', render);
+
+        function render() {
+            c.drawImage(videoElem, canvas.clientWidth/2 - 300, canvas.clientHeight/2 - 200, 600, 400);
+            requestAnimationFrame(render);
+        }
         let w;
         let h;
         const setCanvasExtents = () => {
@@ -52,23 +69,35 @@
             }
             return out;
         }
-        let stars = makeStars(1000);
-        console.log(stars);
+        let stars = makeStars(10000);
 
         const clear = () => {
-            c.fillStyle = "white";
+            let grd = c.createLinearGradient(0,0,0, canvas.height);
+            grd.addColorStop(0, "#131138");
+            grd.addColorStop(0.5,"#23196f")
+            grd.addColorStop(1, "#131138");
+            c.fillStyle = grd;
             c.fillRect(0, 0, canvas.width, canvas.height);
         };
 
         const putPixel = (x, y, brightness,i) => {
-            const intensity = brightness * 255;
-            const rgb = `rgb(${intensity},${intensity},${intensity})`;
+            const r = Math.random() * 255;
+            const g = Math.random() * 255;
+
+            const intensity = brightness*255;
+
+            const b = Math.random() * 255;
+            // const rgb = `rgb(${r},${g},${b})`;
+            const rgb = `rgb(${intensity},${intensity},${intensity}`;
+
             c.fillStyle = rgb;
 
             c.beginPath();
             c.arc(x, y, 1, 0, Math.PI * 2);
             c.fill();
             c.closePath();
+
+
         };
 
         const moveStars = (distance) => {
@@ -93,7 +122,6 @@
 
         const tick = time => {
             let elapsed = time - prevTime;
-            // console.log(elapsed);
             prevTime = time;
             moveStars(elapsed*0.1);
             clear();
@@ -101,6 +129,8 @@
             const cy = h/2;
 
             c.drawImage(img, cx - 300, 50, 600, 150);
+
+
 
 
             const count = stars.length;
@@ -120,26 +150,11 @@
                 const d = (star.z/1000.0);
                 const b = 1-d*d;
 
-                if(i===0){
-                    // console.log("x",star.x);
-                    // console.log('\n');
-                    // console.log("y",star.y);
-                    // console.log('\n');
-                    // console.log("z",star.z);
-                    // console.log('\n');
-                }
-
                 putPixel(x, y, b, i);
 
             }
             requestAnimationFrame(tick);
         };
-
-
-
-
-
-
 
     </script>
 </body>
