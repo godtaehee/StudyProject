@@ -6,11 +6,31 @@
     <link rel="stylesheet" href="css/reset.css">
     <style>
 
+        @keyframes cursor {
+            0% { border-right: 1px solid #fff}
+            50% { border-right: 1px solid #000}
+            100% { border-right: 1px solid #fff}
+        }
         .go-btn {
             position: absolute;
             right: 0;
             top: 0;
         }
+
+        .typing ul li {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .typing ul li.on {
+            display: inline-block;
+            animation: cursor 0.3s infinite;
+        }
+
     </style>
 </head>
 <body style="position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; overflow: hidden; margin: 0; padding: 0; height: 100%">
@@ -19,12 +39,85 @@
     <button type="button" class="go-btn">
         <a href="index.html">이동하기</a>
     </button>
+    <div class="typing">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 
     <script>
 
+        // Typing
+
+        let typingList = ["안녕하세요! 정다겸입니다!",
+            "안녕하세요! 김지호입니다!",
+            "안녕하세요! 임수영입니다!",
+            "안녕하세요! 김태희입니다!"];
+
+        let isTyping = false;
+        let typingIdx = 0;
+        let liIndex = 0;
+        let liLength = document.querySelectorAll('.typing ul li').length;
+        let tyInt;
+
+        let typingTxt = [];
+        for(let i = 0; i < typingList.length; i++) {
+            typingTxt.push(typingList[i].split(""));
+        }
+
+        if(!isTyping) {
+            isTyping = true;
+            tyInt = setInterval(typing, 100);
+        }
+
+        function typing() {
+            let typing = document.querySelectorAll('.typing ul li');
+
+            for(let i = 0; i < typing.length; i++){
+                typing[i].classList.remove('on');
+            }
+            typing[liIndex].classList.add('on');
+            if(typingIdx < typingTxt.length) {
+                typing[liIndex].append(typingTxt[typingIdx++]);
+            }else{
+                if(liIndex < liLength-1) {
+                    liIndex++;
+                    typingIdx = 0;
+                    isTyping = false;
+                     // typingTxt =
+                    clearInterval(tyInt);
+                    setTimeout(function () {
+                        tyInt = setInterval(typing,100);
+                    },1000);
+                } else if(liIndex == liLength - 1) {
+                    clearInterval(tyInt);
+                }
+            }
+
+        }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Canvas
 
         const canvas = document.querySelector('#canvas');
         const c = canvas.getContext("2d");

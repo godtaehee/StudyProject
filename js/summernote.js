@@ -3,26 +3,6 @@
         const styleBtn = document.querySelector('.style-btn');
         const styleList = document.querySelector('.style-list');
         const textContainer = document.querySelector('.txt-con');
-        // const caretID = '_caret';
-        // const paragraph = document.createElement('p');
-        // paragraph.id = caretID;
-        //
-        // window.getSelection().getRangeAt(0).insertNode(paragraph);
-        //
-        // textContainer.blur();
-        //
-        // textContainer.innerHTML = textContainer.innerHTML.replace("mytest", "myteestetest");
-        //
-        //
-        // textContainer.focus();
-        //
-        // let range = document.createRange();
-        // let paragraph_fake = document.getElementById(caretID);
-        // range.selectNode(paragraph_fake);
-        // let selection = window.getSelection();
-        // selection.removeAllRanges();
-        // selection.addRange(range);
-        // range.deleteContents();
 
         boldBtn.addEventListener('click', bold);
 
@@ -62,13 +42,17 @@
             const dataVal = e.target.parentNode.dataset.value;
             const element = document.createElement(dataVal);
 
+            console.log("첫번째 : " + outer.innerHTML.charAt(1));
 
-            outer.innerHTML = `<p>${outer.innerText}</p>`;
-            console.log(outer.innerHTML);
+            if(outer.innerHTML.charAt(1) !== 'p')
+                outer.innerHTML = `<p>${outer.innerText}</p>`;
+            // console.log(outer.innerHTML);
+
+            console.log("두번째 : " + outer.innerHTML.charAt(1));
 
             if(outer.innerHTML.charAt(1) === 'p') {
                 console.log("들어옴");
-                console.log(outer.innerHTML, outer.innerText);
+                // console.log(outer.innerHTML, outer.innerText);
                 outer.innerHTML =  `<${dataVal}>${outer.innerText}</${dataVal}>`;
                 return;
             }
