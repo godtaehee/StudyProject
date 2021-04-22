@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/studyList.css" type="text/css" rel="style.css">
     <link rel="stylesheet" href="../css/reset.css" type="text/css" rel="style.css">
     <link rel="stylesheet" href="../css/basic.css" type="text/css" rel="style.css">
     <link rel="stylesheet" href="../css/style.css">
-<!--    <link rel="stylesheet" href="../css/studyList2.css" type="text/css" rel="style.css">-->
+    <link rel="stylesheet" href="../css/header.css" type="text/css" rel="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>Document</title>
+    <title>StudyList</title>
 </head>
 <body>
 <div class="body__container">
@@ -31,11 +32,11 @@
                 </form>
 
                 <div class="on-box hide">
-                    <div class="btn show-study user-item">
-                        <a href="#">스터디 보기</a>
+                    <div class="user-item">
+                        <a class="btn show-study" href="#">스터디 보기</a>
                     </div>
-                    <div class="btn my-page user-item">
-                        <a href="#">마이페이지</a>
+                    <div class="user-item">
+                        <a class="btn my-page" href="#">마이페이지</a>
                     </div>
 
                     <div class="drop-menu flex">
@@ -54,17 +55,17 @@
                 </div>
 
                 <div class="out-box">
-                    <div class="btn show-study">
-                        <a href="#">로그인</a>
+                    <div class="">
+                        <a class="header-login btn" href="/login.html">로그인</a>
                     </div>
-                    <div class="btn my-page">
-                        <a href="#">회원가입</a>
+                    <div class="">
+                        <a class="header-signup btn" href="#">회원가입</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-     스터디 목록검색
+
     <div class="section section--visual">
         <div class="inner">
             <div class="visual_title">
@@ -270,18 +271,18 @@
             </div>
         </div>
 
-        <nav>
+        <nav class="pager">
             <h1 class="d-none">페이저</h1>
-            <div class>이전</div>
+            <div class="button"></div>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li><a href>1</a></li>
+                <li><a href>2</a></li>
+                <li><a href>3</a></li>
+                <li><a href>4</a></li>
+                <li><a href>5</a></li>
             </ul>
-            <div>다음</div>
-        </nav>
+            <div class="button">다음</div>
+        </nav> 
 
     </main>
 
