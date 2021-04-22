@@ -17,34 +17,47 @@
         <header class="header">
             <h1 class="hide">header</h1>
             <!-- <a href=""></a> -->
-
+    
             <div class="menu">
                 <div class="logo flex">
                     <div class="icon"></div>
                 </div>
-
+    
                 <div class="user-menu">
-                    <div class="show-study user-item">
-                        <a href="#">스터디 보기</a>
-                    </div>
-                    <div class="calender user-item">
-                        <a href="#">시험일정</a>
-                    </div>
-                    <div class="my-page user-item">
-                        <a href="#">마이페이지</a>
-                    </div>
-                </div>
-
-                <div class="drop-menu flex">
-                    <div class="drop-list">
-                        <div class="show-study drop-item">
-                            <a href="#">스터디 보기</a>
+                    <form id="search-form" method="POST" action="">
+                        <input type="text" id="search" class="input--text" placeholder="Search">
+                        <input type="submit" value="Submit" class="hide">
+                    </form>
+    
+                    <div class="on-box hide">
+                        <div class="user-item">
+                            <a class="btn show-study" href="#">스터디 보기</a>
                         </div>
-                        <div class="calender drop-item">
-                            <a href="#">시험일정</a>
+                        <div class="user-item">
+                            <a class="btn my-page" href="#">마이페이지</a>
                         </div>
-                        <div class="my-page drop-item">
-                            <a href="#">마이페이지</a>
+    
+                        <div class="drop-menu flex">
+                            <div class="drop-list">
+                                <div class="drop-item">
+                                    <a href="#">로그아웃</a>
+                                </div>
+                                <div class="drop-item">
+                                    <a href="#">설정</a>
+                                </div>
+                                <div class="drop-item">
+                                    <a href="#">도움말</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="out-box">
+                        <div class="">
+                            <a class="header-login btn" href="/login.html">로그인</a>
+                        </div>
+                        <div class="">
+                            <a class="header-signup btn" href="#">회원가입</a>
                         </div>
                     </div>
                 </div>
