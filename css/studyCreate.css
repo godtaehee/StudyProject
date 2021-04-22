@@ -39,7 +39,7 @@ html,body{
     display: flex;
     background-color: #eeeeee;
     background: url("../img/before_input_img.png")no-repeat center;
-    max-width: 1180;
+    max-width: 1180px;
     height:176px;
     position: relative;
 }
@@ -49,7 +49,7 @@ html,body{
     height: 30px;
     background-size: contain;
     position: relative;
-    left: 30px;
+    left: 180px;
     top: 115px;
 }
 
@@ -254,12 +254,4 @@ input{
 .img-create{
     margin: 2em auto;
 }
-}
-
-/* 가운데로 모으기 */
-
-.flex-column {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
 }
