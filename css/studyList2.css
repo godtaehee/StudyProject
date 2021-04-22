@@ -95,9 +95,11 @@
 
 /* -----HEADER----------------------------------------- */
 header {
+  margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
+  display: flex;
+  max-width: 1180px;
 }
 
 header .inner {
@@ -136,12 +138,18 @@ header .sign-group {
 }
 
 header .btn-group {
-  order: 2;
   display: flex;
 }
 
 header .btn-group .sign-in {
   margin-right: 5px;
+}
+
+.my-page {
+  background: #3ca0bf ;
+}
+.my-page a {
+  color: white;
 }
 
 #search-form {
@@ -156,6 +164,17 @@ header .btn-group .sign-in {
   display: none;
 }
 
+.user-menu {
+  width: 600px;
+  margin-left: auto;
+}
+
+.drop-menu {
+  z-index: 999;
+}
+.menu {
+  padding: 0;
+}
 /*-visual--------------------------------*/
 .section--visual .inner {
   height: 64px;

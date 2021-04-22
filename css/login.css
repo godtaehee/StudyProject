@@ -1,40 +1,3 @@
-/* element */
-.hide{
-    display: none;
-}
-.show{
-    display: block;
-}
-
-.input-control{
-    margin: 53.4px 0 14.5px 0;
-}
-.input-item{
-    width: 90%;
-    height: 66.9px;
-
-    border-radius: 10px;
-    border: none;
-    
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-
-    text-indent: 10px;
-}
-
-.btn{
-    width: 100%;
-    height: 66.9px;
-
-    outline: none;
-    border: none;
-}
-.btn-img{
-    text-indent: -999px;
-    overflow-x: hidden;
-}
-/* element */
-
 /* style - login */
 .login-container{
     height: 100%;
@@ -48,18 +11,20 @@
 }
 .login-title{
     background-color: #1a4d92;
-
+    
     color: #ffffff;
     font-weight: bold;
-    font-size: 30px;
-
+    font-size: 28px;
+    
     text-align: center;
-    height: 92.2px;
-    line-height: 92.2px;
+    height: 75px;
+    line-height: 75px;
+    
+    margin: 0;
 }
 .login-form-container{
     background-color: #ddeef3;
-    margin-top: 24.8px;
+    margin-top: 15px;
     height: 674px;
 
     display: flex;
@@ -87,10 +52,11 @@
             /* background: #ffffff */
         }
 
-        .btn-login{
+        .button-login{
             background: url("../img/button-login.png") no-repeat center;
             margin: 59.3px 0 39.2px;
             width: 485px;
+            height: 66.9px;
 
             cursor: pointer;
         }
@@ -129,32 +95,3 @@
         position: absolute;
     }
 /* style - login */
-
-/* layout */
-.container-only{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 72px 1fr 50px;
-
-    height: 100%;
-}
-.container-only > *{
-    grid-column: 1 / span 12;
-}
-
-.main-only{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #d2e9f5;
-
-    position: relative;
-}
-/* layout */
-
-/* media Query (PC ver.)*/
-@media screen and (min-width: 800px){
-    .container-only{
-        grid-template-rows: 100px 1fr 100px;
-    }
-}
-/* media Query (PC ver.) */

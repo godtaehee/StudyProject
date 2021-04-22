@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/studyList2.css" type="text/css" rel="style.css">
     <link rel="stylesheet" href="../css/reset.css" type="text/css" rel="style.css">
     <link rel="stylesheet" href="../css/basic.css" type="text/css" rel="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+<!--    <link rel="stylesheet" href="../css/studyList2.css" type="text/css" rel="style.css">-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Document</title>
 </head>
@@ -14,32 +15,56 @@
 <div class="body__container">
 
     <!-- HEADER -->
-    <header class="section">
-       <div class="inner clearfix">
-            <div class="menu-group float--left">
-                <div class="logo">
-                    <a href="">Stardy</a>
-                </div>
-                <ul class="main-menu">
-                    <li></li>
-                    <li></li>
-                </ul>
+    <header class="header">
+        <h1 class="hide">header</h1>
+        <!-- <a href=""></a> -->
+
+        <div class="menu">
+            <div class="logo flex">
+                <div class="icon"></div>
             </div>
 
-            <div class="sign-group float--right">
-                <div class="btn-group">
-                    <a href="#" class="btn sign-in">로그인</a>
-                    <a href="#" class="btn btn--primary">회원가입</a>
-                </div>
+            <div class="user-menu">
                 <form id="search-form" method="POST" action="">
                     <input type="text" id="search" class="input--text" placeholder="Search">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="hide">
                 </form>
-            </div>
-       </div>
-    </header>
 
-    <!-- 스터디 목록검색  -->
+                <div class="on-box hide">
+                    <div class="btn show-study user-item">
+                        <a href="#">스터디 보기</a>
+                    </div>
+                    <div class="btn my-page user-item">
+                        <a href="#">마이페이지</a>
+                    </div>
+
+                    <div class="drop-menu flex">
+                        <div class="drop-list">
+                            <div class="drop-item">
+                                <a href="#">로그아웃</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="#">설정</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="#">도움말</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="out-box">
+                    <div class="btn show-study">
+                        <a href="#">로그인</a>
+                    </div>
+                    <div class="btn my-page">
+                        <a href="#">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+     스터디 목록검색
     <div class="section section--visual">
         <div class="inner">
             <div class="visual_title">
@@ -87,7 +112,7 @@
                     있다면 누구나 환영합니다. 같이 즐스터디해용</div>
                 </div>
 
-                
+
                 <div class="text_date">
                     <div class="detail">
                         <ul>
@@ -96,11 +121,11 @@
                             <li>명</li>
                         </ul>
                     </div>
-    
+
                     <div class="date">
                         <p>개설일 : </p>
                         <p> 2021-03-21</p>
-    
+
                         <p>모집 종료일 : </p>
                         <p> 2021-04-12</p>
                     </div>
@@ -121,7 +146,7 @@
                     있다면 누구나 환영합니다. 같이 즐스터디해용</div>
                 </div>
 
-                
+
                 <div class="text_date">
                     <div class="detail">
                         <ul>
@@ -130,11 +155,11 @@
                             <li>명</li>
                         </ul>
                     </div>
-    
+
                     <div class="date">
                         <p>개설일 : </p>
                         <p> 2021-03-21</p>
-    
+
                         <p>모집 종료일 : </p>
                         <p> 2021-04-12</p>
                     </div>
@@ -155,7 +180,7 @@
                     있다면 누구나 환영합니다. 같이 즐스터디해용</div>
                 </div>
 
-                
+
                 <div class="text_date">
                     <div class="detail">
                         <ul>
@@ -164,11 +189,11 @@
                             <li>명</li>
                         </ul>
                     </div>
-    
+
                     <div class="date">
                         <p>개설일 : </p>
                         <p> 2021-03-21</p>
-    
+
                         <p>모집 종료일 : </p>
                         <p> 2021-04-12</p>
                     </div>
@@ -189,7 +214,7 @@
                     있다면 누구나 환영합니다. 같이 즐스터디해용</div>
                 </div>
 
-                
+
                 <div class="text_date">
                     <div class="detail">
                         <ul>
@@ -198,11 +223,11 @@
                             <li>명</li>
                         </ul>
                     </div>
-    
+
                     <div class="date">
                         <p>개설일 : </p>
                         <p> 2021-03-21</p>
-    
+
                         <p>모집 종료일 : </p>
                         <p> 2021-04-12</p>
                     </div>
@@ -223,7 +248,7 @@
                     있다면 누구나 환영합니다. 같이 즐스터디해용</div>
                 </div>
 
-                
+
                 <div class="text_date">
                     <div class="detail">
                         <ul>
@@ -232,11 +257,11 @@
                             <li>명</li>
                         </ul>
                     </div>
-    
+
                     <div class="date">
                         <p>개설일 : </p>
                         <p> 2021-03-21</p>
-    
+
                         <p>모집 종료일 : </p>
                         <p> 2021-04-12</p>
                     </div>
@@ -256,15 +281,11 @@
                 <li>5</li>
             </ul>
             <div>다음</div>
-        </nav> 
+        </nav>
 
     </main>
 
 
 </div>
-
-
-
-    
 </body>
 </html>
