@@ -103,9 +103,11 @@
 
 /* -----HEADER----------------------------------------- */
 header {
+  margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
+  display: flex;
+  max-width: 1180px;
 }
 
 header .inner {
@@ -144,12 +146,18 @@ header .sign-group {
 }
 
 header .btn-group {
-  order: 2;
   display: flex;
 }
 
 header .btn-group .sign-in {
   margin-right: 5px;
+}
+
+.my-page {
+  background: #3ca0bf;
+}
+.my-page a {
+  color: white;
 }
 
 #search-form {
@@ -167,6 +175,17 @@ header .btn-group .sign-in {
   display: none;
 }
 
+.user-menu {
+  width: 600px;
+  margin-left: auto;
+}
+
+.drop-menu {
+  z-index: 999;
+}
+.menu {
+  padding: 0;
+}
 /*-visual--------------------------------*/
 .section--visual .inner {
   height: 64px;
@@ -271,7 +290,7 @@ header .btn-group .sign-in {
 .text_date {
   margin: 20px 10px;
   display: flex;
-  color: #606060;
+  color: #707070;
 }
 .text_date .detail ul {
   display: flex;
@@ -328,7 +347,7 @@ header .btn-group .sign-in {
 }
 
 /* --------media Query (PC ver.)-----------*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   header.section .inner {
     max-width: none;
     margin: 0 auto;
@@ -346,9 +365,47 @@ header .btn-group .sign-in {
     margin-left: 20px;
   }
 
-  section .section--category {
+  .section--category {
     max-width: none;
     margin: 0 auto;
     height: 130px;
+  }
+
+  .list_search .search-form {
+    max-width: none;
+    margin: auto;
+  }
+  .desc .text .note {
+    font-size: 15px;
+  }
+  .desc .text .category {
+    font-size: 14px;
+  }
+  .desc .text .title {
+    font-size: 20px;
+  }
+  .desc .text_date .detail {
+    font-size: 14px;
+    font-weight: normal;
+    width: 84;
+    flex-shrink: 0;
+  }
+  .desc .text_date .date {
+    font-size: 14px;
+    font-weight: normal;
+    width: 84;
+    flex-shrink: 0;
+  }
+  #category-search-form .input--text {
+    width: 200px;
+  }
+  .search-menu .btn {
+    font-size: 12px;
+    padding: 0 2px;
+    margin-top: 3px;
+  }
+  .text_date {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -1,40 +1,3 @@
-/* element */
-.hide{
-    display: none;
-}
-.show{
-    display: block;
-}
-
-.input-control{
-    margin: 53.4px 0 14.5px 0;
-}
-.input-item{
-    width: 90%;
-    height: 66.9px;
-
-    border-radius: 10px;
-    border: none;
-    
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-
-    text-indent: 10px;
-}
-
-.btn{
-    width: 100%;
-    height: 66.9px;
-
-    outline: none;
-    border: none;
-}
-.btn-img{
-    text-indent: -999px;
-    overflow-x: hidden;
-}
-/* element */
-
 /* style - signup */
 .signup-container{
     height: 100%;
@@ -48,18 +11,20 @@
 }
 .signup-title{
     background-color: #1a4d92;
-
+    
     color: #ffffff;
     font-weight: bold;
-    font-size: 30px;
-
+    font-size: 28px;
+    
     text-align: center;
-    height: 92.2px;
-    line-height: 92.2px;
+    height: 75px;
+    line-height: 75px;
+    
+    margin: 0;
 }
 .signup-form-container{
     background-color: #ddeef3;
-    margin-top: 24.8px;
+    margin-top: 15px;
 
     display: flex;
 }
@@ -74,7 +39,7 @@
 
         .input-email{
             /* E-mail 형식 맞으면 check */
-            background: #ffffff url("../img/icon-check.png") no-repeat 90%;
+            background: #ffffff url("../img/icon-check.png") no-repeat 90% !important;
             /* background: #ffffff */
         }
         .input-password-check{
@@ -83,12 +48,21 @@
             /* background: #ffffff */
         }
 
-        .btn-signup{
-            background: url("../img/button-signup.png") no-repeat center;
+        .button-signup{
             margin: 49px 0 39.2px 0;
+            background: rgb(43, 152, 186, 0.93);
             width: 485px;
+            height: 66.9px;
 
+			font-size: 24px;
+			
+			line-height: 66.9px;
+			
+			color: #fff;
             cursor: pointer;
+            
+            display: inline-flex;
+            justify-content: center;
         }
         
     .signup-error{
@@ -100,34 +74,24 @@
         top: 555px;
         left: 525px;
         position: absolute;
+
+        opacity: 0;
+    }
+    .show-ani{
+        animation: show-ani 1s forwards;
     }
 /* style - signup */
 
-/* layout */
-.container-only{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 72px 1fr 50px;
+/* ani */
 
-    height: 100%;
-}
-.container-only > *{
-    grid-column: 1 / span 12;
-}
-
-.main-only{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #d2e9f5;
-
-    position: relative;
-}
-/* layout */
-
-/* media Query (PC ver.)*/
-@media screen and (min-width: 800px){
-    .container-only{
-        grid-template-rows: 100px 1fr 100px;
+@keyframes show-ani{
+    /* 0 ~ 1  from -> to // 0% ~ 100%*/
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
-/* media Query (PC ver.) */
+
+/* ani */
