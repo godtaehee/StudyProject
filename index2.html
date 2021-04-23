@@ -70,6 +70,17 @@
 
         <section class="jumbotron">
             <h1 class="hide">jumbo</h1>
+            <div class="jumbo-content">
+                <div class="jumbo-title">Stardy</div>
+                <div class="large-content">
+                    <div class="first-content">공부가 막막하다면 ?</div>
+                    <div class="second-content">스타디에서 함께할 팀원을 찾아보세요</div>
+                </div>
+                <div class="small-content">
+                    <div class="first-content">작심삼일은 이제 그만 !</div>
+                    <div class="second-content">팀원들과 함께 배우고, 나누고, 성장하세요</div>
+                </div>
+            </div>
         </section>
 
         <main class="main">
@@ -437,7 +448,7 @@
              const card = document.querySelectorAll('.exam-card');
              const prev = document.querySelector('.exam-info-main .prev-btn');
              const after = document.querySelector('.exam-info-main .after-btn');
-
+             const container = document.querySelector('.container');
              let start = 0;
              let dx = 100;
              // card.style.display = 'flex';
@@ -462,6 +473,9 @@
                  }
                  start-=dx;
              });
+
+
+
          })();
     </script>
 </body>

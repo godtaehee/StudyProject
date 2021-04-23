@@ -106,6 +106,46 @@ body {
     background-size: 180px 200px;
 }
 
+.jumbo-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-left: 10%;
+}
+
+.jumbo-title {
+    width: 70px;
+    height: 20px;
+    background: white;
+    padding: 0.8rem 1rem;
+    color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.large-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.first-content {
+    margin-bottom: 10px;
+}
+
+
+.small-content {
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 /* Main */
 
@@ -301,7 +341,7 @@ body {
     }
 
     .jumbotron {
-        height: 200px;
+        height: 230px;
         background-size: 210px 200px;
         background-position: right center;
     }
