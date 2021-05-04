@@ -1,5 +1,6 @@
 html,body{
     height: 100%;
+    width: 100%;
 }
 .img{
     display: inline-block;
@@ -8,11 +9,8 @@ html,body{
 }
 
 .float-content{
-    width:1180px;
+    width:100%;
     margin:40px auto;
-    /*40은 정확한건 아니고 나중에 수영님 페이지 맞춰서
-    margin-left: auto;
-    margin-right: auto; */
     height: 100%;
     min-height:inherit;
 }
@@ -26,6 +24,7 @@ html,body{
 }
 
 .visual_title{
+    width: 100%;
     margin-left: 0;
     margin-bottom: 10px;
     height: 70px;
@@ -33,23 +32,26 @@ html,body{
     background-color: #2b98ba;
 }
 .bg-section{
+    width: 100%;
     background-color: #fcfbf9;
 }
 .jumbotron-img{
-    display: flex;
     background-color: #eeeeee;
+    width: 100%;
     background: url("../img/before_input_img.png")no-repeat center;
     max-width: 1180px;
     height:176px;
     position: relative;
+    background-size: contain;
 }
+
 .camera{
     background: url(../img/camera.png)no-repeat;
     width: 30px;
     height: 30px;
     background-size: contain;
-    position: relative;
-    left: 180px;
+    position: absolute;
+    left: 50px;
     top: 115px;
 }
 
@@ -57,7 +59,7 @@ html,body{
     height:50px;
     margin: auto 40px;
     /* width: 1100px; */
-    width: 90% ;
+    width: 93% ;
     padding: 0 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -71,6 +73,7 @@ html,body{
 .category ul{
     display: flex;
     height: 180px;
+    width: 93%;
     background-color: #fff;
     margin: auto 40px;
 }
@@ -161,6 +164,21 @@ justify-content: center;
     margin-bottom: 40px;
     margin: 2em auto;
 }
+.modi-btn{
+    border: 0.5px solid #2b98ba;
+    color: #fff;
+    background:#2b98ba;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    text-align:center;
+    line-height: 50px;
+    padding: 0 22px;
+    margin-bottom: 40px;
+    margin: 2em auto;
+}
+
 .study-name{
     display: flex;
     align-items: center;
@@ -215,7 +233,7 @@ justify-content: center;
     width: 50%;
 }
 input{
-    margin: 20px 20px !important;
+    margin: 20px 40px !important;
 }
 .input-create {
     width: 100% !important;
@@ -251,7 +269,7 @@ input{
     font-size: 80%;
     }
 
-.img-create{
+.img-create, .modi-btn{
     margin: 2em auto;
 }
 }

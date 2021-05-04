@@ -36,7 +36,9 @@
     .form-signup > *{
         margin-left: 21px;
     }
-
+        .form-signup input{
+            height: 66.9px;
+        }
         .input-email{
             /* E-mail 형식 맞으면 check */
             background: #ffffff url("../img/icon-check.png") no-repeat 90% !important;

@@ -9,15 +9,14 @@
 .input-control{
     margin: 53.4px 0 14.5px 0;
 }
+
 .input-item{
     width: 90%;
-    height: 66.9px;
 
     border-radius: 10px;
     border: none;
     
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
 
     text-indent: 10px;
 
