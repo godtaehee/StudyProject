@@ -2,18 +2,21 @@
 .header {
   background: #fff;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
 
   position: sticky;
   top: 0;
   z-index: 999;
 
+  max-width: 1180px;
   display: flex;
   justify-content: space-between;
 }
 
 #search-form {
   display: none;
+}
+#search-form > input{
+    height: 34px;
 }
 
 .my-page,

@@ -1,0 +1,73 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+#root{
+    height: 100%;
+
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#root > #header{
+    position: sticky;
+    top: 0;
+}
+#root > #aside{
+    background-color: purple;
+
+    display: none;
+    
+    opacity: 0;
+    transition: 1s;
+}
+#root > *{
+    background-color: skyblue;
+    
+    grid-column: 1 / span 12;
+}
+
+@keyframes test{
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 800px){
+
+    #root > #header{
+        background-color: gray;
+    }
+
+    #root > #nav{
+        background-color: yellow;
+    }
+    #root > #aside{
+        background-color: purple;
+    
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 9;
+
+        display: block;    
+        opacity: 1;
+    }
+
+    #root > #main{
+        background-color: darkgreen;
+    
+        grid-column: 4 / span 8;
+        grid-row: 3 / span 9;
+    }
+
+    #root > #footer{
+        background-color: red;
+    
+    }
+    .btn{
+        display:none;
+    }
+}
