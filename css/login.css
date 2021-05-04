@@ -35,6 +35,9 @@
 
     position: relative;
 }
+    .form-login input{
+        height: 66.9px;
+    }
     .form-login > *{
         margin-left: 21px;
     }

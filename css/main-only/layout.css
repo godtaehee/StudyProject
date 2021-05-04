@@ -11,9 +11,9 @@ body, html{
     flex-direction: column;
     height: 100%;
 }
-.container-only > *{
+/* .container-only > *{
     max-width: 1180px;
-}
+} */
 
 .main-only{
     width: 100%;
@@ -32,13 +32,11 @@ body, html{
 
 @media screen and (min-width: 800px){
     /* layout */
-    .container-only{
-        
+    .container-only > *{
+        max-width: 1180px;
     }
     .main-only{
         flex-grow: 1;
-
-
         display: flex;
     }
     .footer{
