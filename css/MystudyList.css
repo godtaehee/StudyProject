@@ -50,7 +50,7 @@
 }
 
 .btn2 {
-  border: solid 1px #707070;
+  border: solid 1px rgba(112, 112, 112, 0.35);
   background-color: #ffffff;
   min-width: 65px;
   height: 34px;
@@ -67,7 +67,7 @@
   position: relative;
 }
 
-.btn2:hover::before {
+.btn2:hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -75,7 +75,25 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background: rgba(245, 177, 87, 0.411);
+  background: rgba(245, 177, 87, 0.5);
+  --z-index: 2;
+}
+
+.btn--primary {
+  border: solid 1px rgba(112, 112, 112, 0.35);
+  background-color: #2b98ba;
+  color: rgb(255, 255, 255);
+}
+
+.btn--primary:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(78, 150, 179, 0.5);
   --z-index: 2;
 }
 
@@ -108,7 +126,36 @@
   min-height: 108px;
   flex: 1 1 auto;
   padding: 1em;
-  background: rgb(187, 187, 187);
+  background: rgb(247, 244, 244);
+  border: solid 1px rgba(112, 112, 112, 0.35);
+}
+
+.card-desc > p:nth-child(1) {
+  font-weight: 550;
+  font-size: 19px;
+  color: #555555;
+}
+
+.card-desc > p:nth-child(2) {
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 10px;
+  color: #949494;
+}
+
+.card-desc > div:nth-child(3) {
+  margin-top: 10px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/ico_user_sm.png");
+  background-size: contain;
+}
+
+.card-desc > p:nth-child(4) {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #949494;
 }
 
 @media (min-width: 600px) {
@@ -162,6 +209,7 @@
 }
 
 .pager {
+  width: 1180px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
