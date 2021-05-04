@@ -37,8 +37,9 @@ html,body{
 }
 .jumbotron-img{
     background-color: #eeeeee;
-    /*background: url("../img/before_input_img.png")no-repeat center;*/
     width: 100%;
+    background: url("../img/before_input_img.png")no-repeat center;
+    max-width: 1180px;
     height:176px;
     position: relative;
     background-size: contain;
@@ -271,12 +272,4 @@ input{
 .img-create, .modi-btn{
     margin: 2em auto;
 }
-}
-
-/* 가운데로 모으기 */
-
-.flex-column {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
 }

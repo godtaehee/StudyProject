@@ -46,8 +46,6 @@
 
   display: flex;
   flex-direction: column;
-
-  font-family: AppleSDGothicNeoB00;
 }
 /* Profile Box */
 .profile-box {
@@ -261,8 +259,8 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 72px 1fr 50px;
   height: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
+  /* max-width: 1180px;
+  margin: 0 auto; */
 }
 .container-only > * {
   grid-column: 1 / span 12;
@@ -272,7 +270,6 @@
   display: flex;
   flex-direction: column;
   border: 1px solid #d2e9f5;
-
   position: relative;
 }
 /* layout */
@@ -282,6 +279,10 @@
   /* layout */
   .container-only {
     grid-template-rows: 100px 1fr 100px;
+  }
+
+  .main-only {
+    grid-column: 2 / span 10;
   }
 
   /* style - My Page - Friends */
