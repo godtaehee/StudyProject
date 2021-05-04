@@ -496,7 +496,24 @@
         </aside>
 
         <div class="modal hide">
-            <p>안녕하세요 모달창입니다.</p>
+            <div class="modal-board">
+                <div class="modal-con">
+                    <div class="modal-head">
+                        <div class="write-hand"></div>
+                        <div class="write-content">글을 작성해주세요.</div>
+                    </div>
+                    <div class="modal-body">
+                        <input class="modal-title" type="text" placeholder="제목을 입력하세요">
+                        <textarea class="modal-content" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button">작성</button>
+                        <button type="button">취소</button>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
         <footer class="footer">
@@ -510,9 +527,9 @@
         write.addEventListener('click', () =>{
             if(modal.classList.contains('hide')){
                 modal.classList.remove('hide');
-                modal.classList.add('show');
+                modal.classList.add('flex-show');
             }else {
-                modal.classList.remove('show');
+                modal.classList.remove('flex-show');
                 modal.classList.add('hide');
             }
         });
